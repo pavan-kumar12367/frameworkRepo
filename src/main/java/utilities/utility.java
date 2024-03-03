@@ -9,12 +9,15 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+//this is utility class
+
+
 public class utility {
 
 	public static String timestamp() {
 		Date d = new Date();
 		String datetext = d.toString().replace(" ", "_").replace(":", "_");
-		return datetext+"@gmail.com";
+		return datetext + "@gmail.com";
 	}
 
 	public static Object[][] generateTestData(String sheetname) throws Exception {
@@ -49,7 +52,7 @@ public class utility {
 			}
 		}
 		workbook.close(); // Close workbook
-        file.close(); // Close FileInputStream
+		file.close(); // Close FileInputStream
 		return data;
 
 	}
